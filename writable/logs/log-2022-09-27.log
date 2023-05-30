@@ -1,0 +1,23 @@
+ERROR - 2022-09-27 10:01:57 --> Table 'u895244394_bams.id_type' doesn't exist
+CRITICAL - 2022-09-27 10:01:57 --> Table 'u895244394_bams.id_type' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id_type_id` as `ID`, `id_type_desc` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_type_id` as `ID`, `id_type_desc` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_type_id` as `ID`, `id_type_desc` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_type_id` as `ID`, `id_type_desc` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/Id_type_m.php(45): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Masterdata.php(77): App\Models\Id_type_m->get()
+ 9 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+10 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+11 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

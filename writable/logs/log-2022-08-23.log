@@ -1,0 +1,369 @@
+ERROR - 2022-08-23 01:41:10 --> Table 'voting_system.precincts' doesn't exist
+CRITICAL - 2022-08-23 01:41:10 --> Table 'voting_system.precincts' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `precincts` (`precinct_name`, `precinct_created_at`, `precinct_updated_at`) VALUES (\'asdasdasd\', \'2022-08-23 01:41:10\', \'2022-08-23 01:41:10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `precincts` (`precinct_name`, `precinct_created_at`, `precinct_updated_at`) VALUES (\'asdasdasd\', \'2022-08-23 01:41:10\', \'2022-08-23 01:41:10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `precincts` (`precinct_name`, `precinct_created_at`, `precinct_updated_at`) VALUES (\'asdasdasd\', \'2022-08-23 01:41:10\', \'2022-08-23 01:41:10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `precincts` (`precinct_name`, `precinct_created_at`, `precinct_updated_at`) VALUES (:precinct_name:, :precinct_created_at:, :precinct_updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Vei.php(178): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Vei->save_precinct()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vei))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-23 01:44:51 --> Table 'voting_system.precincts' doesn't exist
+CRITICAL - 2022-08-23 01:44:51 --> Table 'voting_system.precincts' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `precincts` (`precinct_name`, `precinct_created_at`, `precinct_updated_at`) VALUES (\'asdasdasd\', \'2022-08-23 01:44:51\', \'2022-08-23 01:44:51\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `precincts` (`precinct_name`, `precinct_created_at`, `precinct_updated_at`) VALUES (\'asdasdasd\', \'2022-08-23 01:44:51\', \'2022-08-23 01:44:51\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `precincts` (`precinct_name`, `precinct_created_at`, `precinct_updated_at`) VALUES (\'asdasdasd\', \'2022-08-23 01:44:51\', \'2022-08-23 01:44:51\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `precincts` (`precinct_name`, `precinct_created_at`, `precinct_updated_at`) VALUES (:precinct_name:, :precinct_created_at:, :precinct_updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Vei.php(178): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Vei->save_precinct()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vei))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:53:43 --> Undefined variable $voters
+in APPPATH\Controllers\Vei.php on line 125.
+ 1 APPPATH\Controllers\Vei.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $voters', 'APPPATH\\Controllers\\Vei.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Vei->getPrecinct()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vei))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:54:00 --> Undefined property: stdClass::$cntVoter
+in APPPATH\Views\vei\precincts.php on line 52.
+ 1 APPPATH\Views\vei\precincts.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cntVoter', 'APPPATH\\Views\\vei\\precincts.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vei\\precincts.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('vei/precincts', [], true)
+ 5 APPPATH\Views\template.php(32): view('vei/precincts')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Vei.php(129): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Vei->getPrecinct()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vei))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:54:10 --> Undefined property: stdClass::$cnt
+in APPPATH\Views\vei\precincts.php on line 52.
+ 1 APPPATH\Views\vei\precincts.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cnt', 'APPPATH\\Views\\vei\\precincts.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vei\\precincts.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('vei/precincts', [], true)
+ 5 APPPATH\Views\template.php(32): view('vei/precincts')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Vei.php(129): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Vei->getPrecinct()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vei))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:54:28 --> Undefined property: stdClass::$cnt
+in APPPATH\Views\vei\precincts.php on line 52.
+ 1 APPPATH\Views\vei\precincts.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cnt', 'APPPATH\\Views\\vei\\precincts.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vei\\precincts.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('vei/precincts', [], true)
+ 5 APPPATH\Views\template.php(32): view('vei/precincts')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Vei.php(129): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Vei->getPrecinct()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vei))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:54:56 --> Undefined property: stdClass::$cnt_voters
+in APPPATH\Views\vei\precincts.php on line 52.
+ 1 APPPATH\Views\vei\precincts.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cnt_voters', 'APPPATH\\Views\\vei\\precincts.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vei\\precincts.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('vei/precincts', [], true)
+ 5 APPPATH\Views\template.php(32): view('vei/precincts')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Vei.php(129): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Vei->getPrecinct()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vei))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-23 14:56:06 --> Unknown column 'precint_id' in 'on clause'
+CRITICAL - 2022-08-23 14:56:06 --> Unknown column 'precint_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `precinct_name`, `precinct_id`, count(*) as cnt_voters
+FROM `precincts`
+JOIN `voters` ON `voter_precinct` = `precint_id`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `precinct_name`, `precinct_id`, count(*) as cnt_voters
+FROM `precincts`
+JOIN `voters` ON `voter_precinct` = `precint_id`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `precinct_name`, `precinct_id`, count(*) as cnt_voters
+FROM `precincts`
+JOIN `voters` ON `voter_precinct` = `precint_id`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `precinct_name`, `precinct_id`, count(*) as cnt_voters
+FROM `precincts`
+JOIN `voters` ON `voter_precinct` = `precint_id`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Vei.php(123): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Vei->getPrecinct()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vei))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-23 14:57:51 --> Unknown column 'precint_id' in 'on clause'
+CRITICAL - 2022-08-23 14:57:51 --> Unknown column 'precint_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT precinct_name, precinct_id, count(*) as cnt_voters
+FROM `precincts`
+JOIN `voters` ON `voter_precinct` = `precint_id`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT precinct_name, precinct_id, count(*) as cnt_voters
+FROM `precincts`
+JOIN `voters` ON `voter_precinct` = `precint_id`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT precinct_name, precinct_id, count(*) as cnt_voters
+FROM `precincts`
+JOIN `voters` ON `voter_precinct` = `precint_id`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT precinct_name, precinct_id, count(*) as cnt_voters
+FROM `precincts`
+JOIN `voters` ON `voter_precinct` = `precint_id`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Vei.php(123): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Vei->getPrecinct()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vei))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-23 15:00:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Select count(*) from voters where voter_precinct = precinct_id ) as cnt_voters
+F' at line 1
+CRITICAL - 2022-08-23 15:00:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Select count(*) from voters where voter_precinct = precinct_id ) as cnt_voters
+F' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT precinct_name, precinct_id, count(Select count(*) from voters where voter_precinct = precinct_id ) as cnt_voters
+FROM `precincts`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT precinct_name, precinct_id, count(Select count(*) from voters where voter_precinct = precinct_id ) as cnt_voters
+FROM `precincts`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT precinct_name, precinct_id, count(Select count(*) from voters where voter_precinct = precinct_id ) as cnt_voters
+FROM `precincts`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT precinct_name, precinct_id, count(Select count(*) from voters where voter_precinct = precinct_id ) as cnt_voters
+FROM `precincts`
+WHERE `precincts`.`precinct_deleted_at` IS NULL
+GROUP BY `precinct_id`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Vei.php(123): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Vei->getPrecinct()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vei))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 15:23:56 --> Undefined variable $precinct
+in APPPATH\Views\admin\voters.php on line 116.
+ 1 APPPATH\Views\admin\voters.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $precinct', 'APPPATH\\Views\\admin\\voters.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\voters.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/voters', [], true)
+ 5 APPPATH\Views\template.php(32): view('admin/voters')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Admin.php(124): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->getVoters()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 15:26:22 --> Undefined property: stdClass::$precinct_code
+in APPPATH\Models\Precinct_m.php on line 50.
+ 1 APPPATH\Models\Precinct_m.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$precinct_code', 'APPPATH\\Models\\Precinct_m.php', 50)
+ 2 APPPATH\Controllers\Admin.php(120): App\Models\Precinct_m->dropdown()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->getVoters()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 15:31:00 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Helpers\my_helper.php on line 3.
+ 1 APPPATH\Controllers\Admin.php(14): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Admin->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 15:31:10 --> Unmatched '}'
+in APPPATH\Helpers\my_helper.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Admin->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 15:31:57 --> Call to undefined function App\Controllers\random_password()
+in APPPATH\Controllers\Admin.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->getVoters()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 15:57:30 --> syntax error, unexpected token "}"
+in APPPATH\Models\Precinct_m.php on line 65.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Precinct_m.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Precinct_m')
+ 3 APPPATH\Controllers\Admin.php(14): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Precinct_m')
+ 4 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Admin->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-23 15:57:57 --> Unknown column 'voter_password' in 'where clause'
+CRITICAL - 2022-08-23 15:57:57 --> Unknown column 'voter_password' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `precincts`
+WHERE `voter_password` = \'TS7AFZUC\'
+AND `precincts`.`precinct_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `precincts`
+WHERE `voter_password` = \'TS7AFZUC\'
+AND `precincts`.`precinct_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `precincts`
+WHERE `voter_password` = \'TS7AFZUC\'
+AND `precincts`.`precinct_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `precincts`
+WHERE `voter_password` = :voter_password:
+AND `precincts`.`precinct_deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\Precinct_m.php(60): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Admin.php(63): App\Models\Precinct_m->validate_pass('TS7AFZUC')
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->upload_voters()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 15:59:37 --> Allowed fields must be specified for model: App\Models\Voter_m
+in SYSTEMPATH\BaseModel.php on line 1138.
+ 1 SYSTEMPATH\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Voter_m')
+ 2 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\Admin.php(65): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->upload_voters()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-23 16:13:38 --> Table 'voting_system.precinct' doesn't exist
+CRITICAL - 2022-08-23 16:13:38 --> Table 'voting_system.precinct' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `voters`
+LEFT JOIN `precinct` ON `precinct_id` = `voter_precinct_id`
+WHERE `voters`.`voter_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `voters`
+LEFT JOIN `precinct` ON `precinct_id` = `voter_precinct_id`
+WHERE `voters`.`voter_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `voters`
+LEFT JOIN `precinct` ON `precinct_id` = `voter_precinct_id`
+WHERE `voters`.`voter_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `voters`
+LEFT JOIN `precinct` ON `precinct_id` = `voter_precinct_id`
+WHERE `voters`.`voter_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(133): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->getVoters()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-23 16:13:57 --> Unknown column 'voter_precinct_id' in 'on clause'
+CRITICAL - 2022-08-23 16:13:57 --> Unknown column 'voter_precinct_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `voters`
+LEFT JOIN `precincts` ON `precinct_id` = `voter_precinct_id`
+WHERE `voters`.`voter_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `voters`
+LEFT JOIN `precincts` ON `precinct_id` = `voter_precinct_id`
+WHERE `voters`.`voter_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `voters`
+LEFT JOIN `precincts` ON `precinct_id` = `voter_precinct_id`
+WHERE `voters`.`voter_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `voters`
+LEFT JOIN `precincts` ON `precinct_id` = `voter_precinct_id`
+WHERE `voters`.`voter_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(133): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->getVoters()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 16:14:14 --> syntax error, unexpected token ";"
+in APPPATH\Views\admin\voters.php on line 63.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/voters', [], true)
+ 3 APPPATH\Views\template.php(32): view('admin/voters')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 7 APPPATH\Controllers\Admin.php(139): view('template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->getVoters()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 16:15:07 --> syntax error, unexpected token ";"
+in APPPATH\Views\admin\voters.php on line 67.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/voters', [], true)
+ 3 APPPATH\Views\template.php(32): view('admin/voters')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 7 APPPATH\Controllers\Admin.php(139): view('template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->getVoters()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 16:15:30 --> Undefined property: stdClass::$voter_initials
+in APPPATH\Views\admin\voters.php on line 61.
+ 1 APPPATH\Views\admin\voters.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$voter_initials', 'APPPATH\\Views\\admin\\voters.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\voters.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/voters', [], true)
+ 5 APPPATH\Views\template.php(32): view('admin/voters')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Admin.php(139): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->getVoters()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

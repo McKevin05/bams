@@ -1,0 +1,31 @@
+.print-ct .body-cert{
+    line-height: 1;
+}
+
+.print_show{
+    display: none;
+}
+
+.text-indent{
+    text-indent: 50px;
+}
+
+@media print{
+    @page{
+        size: Legal;
+        margin: 0.5in .50in  1.5in .50in;
+    }
+    p{
+        text-align: justify;
+        font-size: 11pt;
+        line-height: 22px !important;
+    }
+
+    .print_hide,#toolbarContainer{
+        display: none;
+    }
+
+    .print_show{
+        display: block;
+    }
+}

@@ -1,0 +1,23 @@
+table{
+    thead{
+        background: #0c2236;
+        color: #ffff;
+    }
+    
+}
+
+.table>thead {
+    vertical-align: middle;
+    tr{
+       th{
+        font-weight: 100;
+        letter-spacing: 1px;
+       } 
+    }
+    tr{
+        th{
+         font-weight: 100;
+         letter-spacing: 0.5px;
+        } 
+     }
+}

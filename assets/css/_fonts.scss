@@ -1,0 +1,65 @@
+// Arial (sans-serif)
+// Verdana (sans-serif)
+// Tahoma (sans-serif)
+// Trebuchet MS (sans-serif)
+// Times New Roman (serif)
+// Georgia (serif)
+// Garamond (serif)
+// Courier New (monospace)
+// Brush Script MT (cursive)
+
+/* poppins-regular - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+
+  /* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+
+  /* marcellus-regular - latin */
+@font-face {
+    font-family: 'Marcellus';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/marcellus-v13-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/marcellus-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/marcellus-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/marcellus-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/marcellus-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/marcellus-v13-latin-regular.svg#Marcellus') format('svg'); /* Legacy iOS */
+  }
+
+
+  /* marcellus-regular - latin */
+  @font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Metropolis-Regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/Metropolis-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Metropolis-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Metropolis-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Metropolis-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  }

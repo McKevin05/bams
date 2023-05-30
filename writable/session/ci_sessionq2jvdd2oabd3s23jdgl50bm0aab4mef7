@@ -1,0 +1,8 @@
+__ci_last_regenerate|i:1685439226;residentLastQuery|s:336:"SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_desc` = `street`
+LEFT JOIN `gender` ON `gender_desc` = `gender`
+LEFT JOIN `nationality` ON `nationality_id` = `nationality`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_desc` = `status`
+WHERE `resident_info`.`deleted_at` IS NULL";_ci_previous_url|s:38:"http://localhost/bams/residents/view/1";

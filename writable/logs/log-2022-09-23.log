@@ -1,0 +1,650 @@
+CRITICAL - 2022-09-23 09:29:04 --> form_open(): Argument #1 ($action) must be of type string, null given, called in C:\wamp64\www\bamsci4\app\Views\streets\index.php on line 23
+in SYSTEMPATH\Helpers\form_helper.php on line 27.
+ 1 APPPATH\Views\streets\index.php(23): form_open(null, 'class="row row-cols-lg-auto g-3 align-items-center"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\streets\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Streets/index', [], true)
+ 5 APPPATH\Views\template.php(62): view('Streets/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Streets.php(28): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Streets->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Streets))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 09:29:26 --> form_open(): Argument #1 ($action) must be of type string, null given, called in C:\wamp64\www\bamsci4\app\Views\streets\index.php on line 23
+in SYSTEMPATH\Helpers\form_helper.php on line 27.
+ 1 APPPATH\Views\streets\index.php(23): form_open(null, 'class="row row-cols-lg-auto g-3 align-items-center"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\streets\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Streets/index', [], true)
+ 5 APPPATH\Views\template.php(62): view('Streets/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Streets.php(28): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Streets->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Streets))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 09:29:44 --> form_open(): Argument #1 ($action) must be of type string, null given, called in C:\wamp64\www\bamsci4\app\Views\streets\index.php on line 23
+in SYSTEMPATH\Helpers\form_helper.php on line 27.
+ 1 APPPATH\Views\streets\index.php(23): form_open(null, 'class="row row-cols-lg-auto g-3 align-items-center"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\streets\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Streets/index', [], true)
+ 5 APPPATH\Views\template.php(62): view('Streets/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Streets.php(28): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Streets->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Streets))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 09:29:46 --> form_open(): Argument #1 ($action) must be of type string, null given, called in C:\wamp64\www\bamsci4\app\Views\streets\index.php on line 23
+in SYSTEMPATH\Helpers\form_helper.php on line 27.
+ 1 APPPATH\Views\streets\index.php(23): form_open(null, 'class="row row-cols-lg-auto g-3 align-items-center"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\streets\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Streets/index', [], true)
+ 5 APPPATH\Views\template.php(62): view('Streets/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Streets.php(28): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Streets->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Streets))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 09:36:40 --> form_open(): Argument #1 ($action) must be of type string, null given, called in C:\wamp64\www\bamsci4\app\Views\streets\index.php on line 23
+in SYSTEMPATH\Helpers\form_helper.php on line 27.
+ 1 APPPATH\Views\streets\index.php(23): form_open(null, 'class="row row-cols-lg-auto g-3 align-items-center"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\streets\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Streets/index', [], true)
+ 5 APPPATH\Views\template.php(62): view('Streets/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Streets.php(28): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Streets->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Streets))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 09:36:44 --> form_open(): Argument #1 ($action) must be of type string, null given, called in C:\wamp64\www\bamsci4\app\Views\streets\index.php on line 23
+in SYSTEMPATH\Helpers\form_helper.php on line 27.
+ 1 APPPATH\Views\streets\index.php(23): form_open(null, 'class="row row-cols-lg-auto g-3 align-items-center"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\streets\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Streets/index', [], true)
+ 5 APPPATH\Views\template.php(62): view('Streets/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Streets.php(28): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Streets->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Streets))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:11:07 --> Undefined variable $addItemBody
+in APPPATH\Views\masterdata\add_item.php on line 19.
+ 1 APPPATH\Views\masterdata\add_item.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $addItemBody', 'APPPATH\\Views\\masterdata\\add_item.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\add_item.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/add_item', [], true)
+ 5 APPPATH\Views\masterdata\id_type.php(44): view('masterdata/add_item')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\id_type.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/id_type', [], true)
+ 9 APPPATH\Views\template.php(62): view('masterdata/id_type')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+13 APPPATH\Controllers\Masterdata.php(44): view('template', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:11:10 --> Undefined variable $addItemBody
+in APPPATH\Views\masterdata\add_item.php on line 19.
+ 1 APPPATH\Views\masterdata\add_item.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $addItemBody', 'APPPATH\\Views\\masterdata\\add_item.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\add_item.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/add_item', [], true)
+ 5 APPPATH\Views\masterdata\id_type.php(44): view('masterdata/add_item')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\id_type.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/id_type', [], true)
+ 9 APPPATH\Views\template.php(62): view('masterdata/id_type')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+13 APPPATH\Controllers\Masterdata.php(44): view('template', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:12:04 --> Undefined variable $addItemBody
+in APPPATH\Views\masterdata\add_item.php on line 19.
+ 1 APPPATH\Views\masterdata\add_item.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $addItemBody', 'APPPATH\\Views\\masterdata\\add_item.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\add_item.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/add_item', [], true)
+ 5 APPPATH\Views\masterdata\id_type.php(44): view('masterdata/add_item')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\id_type.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/id_type', [], true)
+ 9 APPPATH\Views\template.php(62): view('masterdata/id_type')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+13 APPPATH\Controllers\Masterdata.php(44): view('template', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:12:08 --> Undefined variable $addItemBody
+in APPPATH\Views\masterdata\add_item.php on line 19.
+ 1 APPPATH\Views\masterdata\add_item.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $addItemBody', 'APPPATH\\Views\\masterdata\\add_item.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\add_item.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/add_item', [], true)
+ 5 APPPATH\Views\masterdata\id_type.php(44): view('masterdata/add_item')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\id_type.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/id_type', [], true)
+ 9 APPPATH\Views\template.php(62): view('masterdata/id_type')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+13 APPPATH\Controllers\Masterdata.php(44): view('template', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:12:09 --> Undefined variable $addItemBody
+in APPPATH\Views\masterdata\add_item.php on line 19.
+ 1 APPPATH\Views\masterdata\add_item.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $addItemBody', 'APPPATH\\Views\\masterdata\\add_item.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\add_item.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/add_item', [], true)
+ 5 APPPATH\Views\masterdata\id_type.php(44): view('masterdata/add_item')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\id_type.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/id_type', [], true)
+ 9 APPPATH\Views\template.php(62): view('masterdata/id_type')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+13 APPPATH\Controllers\Masterdata.php(44): view('template', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:12:09 --> Undefined variable $addItemBody
+in APPPATH\Views\masterdata\add_item.php on line 19.
+ 1 APPPATH\Views\masterdata\add_item.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $addItemBody', 'APPPATH\\Views\\masterdata\\add_item.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\add_item.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/add_item', [], true)
+ 5 APPPATH\Views\masterdata\id_type.php(44): view('masterdata/add_item')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\id_type.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/id_type', [], true)
+ 9 APPPATH\Views\template.php(62): view('masterdata/id_type')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+13 APPPATH\Controllers\Masterdata.php(44): view('template', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:12:09 --> Undefined variable $addItemBody
+in APPPATH\Views\masterdata\add_item.php on line 19.
+ 1 APPPATH\Views\masterdata\add_item.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $addItemBody', 'APPPATH\\Views\\masterdata\\add_item.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\add_item.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/add_item', [], true)
+ 5 APPPATH\Views\masterdata\id_type.php(44): view('masterdata/add_item')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\id_type.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/id_type', [], true)
+ 9 APPPATH\Views\template.php(62): view('masterdata/id_type')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+13 APPPATH\Controllers\Masterdata.php(44): view('template', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:12:10 --> Undefined variable $addItemBody
+in APPPATH\Views\masterdata\add_item.php on line 19.
+ 1 APPPATH\Views\masterdata\add_item.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $addItemBody', 'APPPATH\\Views\\masterdata\\add_item.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\add_item.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/add_item', [], true)
+ 5 APPPATH\Views\masterdata\id_type.php(44): view('masterdata/add_item')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masterdata\\id_type.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('masterdata/id_type', [], true)
+ 9 APPPATH\Views\template.php(62): view('masterdata/id_type')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+13 APPPATH\Controllers\Masterdata.php(44): view('template', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:32:13 --> syntax error, unexpected token "\"
+in APPPATH\Controllers\Masterdata.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Masterdata.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\masterdata')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\masterdata')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\masterdata', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:32:37 --> syntax error, unexpected token "\"
+in APPPATH\Controllers\Masterdata.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Masterdata.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\masterdata')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\masterdata')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\masterdata', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:32:53 --> syntax error, unexpected token "\"
+in APPPATH\Controllers\Masterdata.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Masterdata.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\masterdata')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\masterdata')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\masterdata', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:32:54 --> syntax error, unexpected token "\"
+in APPPATH\Controllers\Masterdata.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Masterdata.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\masterdata')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\masterdata')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\masterdata', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:32:58 --> syntax error, unexpected token "\"
+in APPPATH\Controllers\Masterdata.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Masterdata.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\masterdata')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\masterdata')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\masterdata', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:35:41 --> syntax error, unexpected token "\"
+in APPPATH\Controllers\Masterdata.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Masterdata.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\masterdata')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\masterdata')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\masterdata', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:35:42 --> syntax error, unexpected token "\"
+in APPPATH\Controllers\Masterdata.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Masterdata.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\masterdata')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\masterdata')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\masterdata', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:40:01 --> Undefined property: App\Controllers\Masterdata::$model
+in APPPATH\Controllers\Masterdata.php on line 48.
+ 1 APPPATH\Controllers\Masterdata.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Masterdata::$model', 'APPPATH\\Controllers\\Masterdata.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('street')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:40:40 --> Call to a member function get() on null
+in APPPATH\Controllers\Masterdata.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('street')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:41:23 --> Call to a member function get_data() on null
+in APPPATH\Controllers\Masterdata.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('street')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:43:18 --> Call to a member function get_data() on null
+in APPPATH\Controllers\Masterdata.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('street')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:45:14 --> Call to a member function get_data() on null
+in APPPATH\Controllers\Masterdata.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('street')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:47:13 --> Undefined variable $model
+in APPPATH\Controllers\Masterdata.php on line 44.
+ 1 APPPATH\Controllers\Masterdata.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'APPPATH\\Controllers\\Masterdata.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('street')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:47:30 --> Call to a member function get() on null
+in APPPATH\Controllers\Masterdata.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('street')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 10:55:58 --> Undefined variable $models
+in APPPATH\Controllers\Masterdata.php on line 48.
+ 1 APPPATH\Controllers\Masterdata.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $models', 'APPPATH\\Controllers\\Masterdata.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('street')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 11:13:46 --> form_open(): Argument #1 ($action) must be of type string, null given, called in C:\wamp64\www\bamsci4\app\Views\streets\index.php on line 23
+in SYSTEMPATH\Helpers\form_helper.php on line 27.
+ 1 APPPATH\Views\streets\index.php(23): form_open(null, 'class="row row-cols-lg-auto g-3 align-items-center"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\streets\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Streets/index', [], true)
+ 5 APPPATH\Views\template.php(62): view('Streets/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Streets.php(28): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Streets->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Streets))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 11:13:49 --> form_open(): Argument #1 ($action) must be of type string, null given, called in C:\wamp64\www\bamsci4\app\Views\streets\index.php on line 23
+in SYSTEMPATH\Helpers\form_helper.php on line 27.
+ 1 APPPATH\Views\streets\index.php(23): form_open(null, 'class="row row-cols-lg-auto g-3 align-items-center"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\streets\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Streets/index', [], true)
+ 5 APPPATH\Views\template.php(62): view('Streets/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Streets.php(28): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Streets->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Streets))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-23 11:23:15 --> Unknown column 'id_type_desc' in 'field list'
+CRITICAL - 2022-09-23 11:23:15 --> Unknown column 'id_type_desc' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_type_id` as `ID`, `id_type_desc` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_type_id` as `ID`, `id_type_desc` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_type_id` as `ID`, `id_type_desc` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_type_id` as `ID`, `id_type_desc` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Id_type_m.php(45): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Masterdata.php(78): App\Models\Id_type_m->get()
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-23 11:26:41 --> Unknown column 'id_type_value' in 'field list'
+CRITICAL - 2022-09-23 11:26:41 --> Unknown column 'id_type_value' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_type_id` as `ID`, `id_type_value` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_type_id` as `ID`, `id_type_value` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_type_id` as `ID`, `id_type_value` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_type_id` as `ID`, `id_type_value` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Id_type_m.php(45): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Masterdata.php(78): App\Models\Id_type_m->get()
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-23 11:26:43 --> Unknown column 'id_type_value' in 'field list'
+CRITICAL - 2022-09-23 11:26:43 --> Unknown column 'id_type_value' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_type_id` as `ID`, `id_type_value` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_type_id` as `ID`, `id_type_value` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_type_id` as `ID`, `id_type_value` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_type_id` as `ID`, `id_type_value` as `DESC`
+FROM `id_type`
+WHERE `id_type`.`id_type_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Id_type_m.php(45): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Masterdata.php(78): App\Models\Id_type_m->get()
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('id_type')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 14:21:28 --> Undefined variable $info
+in APPPATH\Controllers\Masterdata.php on line 91.
+ 1 APPPATH\Controllers\Masterdata.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'APPPATH\\Controllers\\Masterdata.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->view('street')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 14:22:10 --> Undefined variable $info
+in APPPATH\Controllers\Masterdata.php on line 91.
+ 1 APPPATH\Controllers\Masterdata.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'APPPATH\\Controllers\\Masterdata.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->view('street')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 14:38:30 --> syntax error, unexpected token "return"
+in APPPATH\Models\Street_m.php on line 51.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Street_m.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Street_m')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Street_m')
+ 4 SYSTEMPATH\Config\Factories.php(152): class_exists('App\\Models\\Street_m')
+ 5 SYSTEMPATH\Config\Factories.php(102): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\Street_m')
+ 6 SYSTEMPATH\Config\Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH\Common.php(811): CodeIgniter\Config\Factories::models('App\\Models\\Street_m', [...], null)
+ 8 APPPATH\Controllers\Masterdata.php(94): model('App\\Models\\Street_m', false)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->view('street')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 14:41:53 --> syntax error, unexpected variable "$form"
+in APPPATH\Models\Street_m.php on line 50.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Street_m.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Street_m')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Street_m')
+ 4 SYSTEMPATH\Config\Factories.php(152): class_exists('App\\Models\\Street_m')
+ 5 SYSTEMPATH\Config\Factories.php(102): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\Street_m')
+ 6 SYSTEMPATH\Config\Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH\Common.php(811): CodeIgniter\Config\Factories::models('App\\Models\\Street_m', [...], null)
+ 8 APPPATH\Controllers\Masterdata.php(75): model('App\\Models\\Street_m', false)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('street')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 14:49:02 --> Call to undefined method App\Models\Gender_m::form
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Masterdata.php(111): CodeIgniter\Model->__call('form', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->view('gender')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 14:49:57 --> Undefined property: stdClass::$street_id
+in APPPATH\Models\Gender_m.php on line 51.
+ 1 APPPATH\Models\Gender_m.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$street_id', 'APPPATH\\Models\\Gender_m.php', 51)
+ 2 APPPATH\Controllers\Masterdata.php(111): App\Models\Gender_m->form(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->view('gender')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 14:50:11 --> Undefined property: stdClass::$street_id
+in APPPATH\Models\Gender_m.php on line 51.
+ 1 APPPATH\Models\Gender_m.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$street_id', 'APPPATH\\Models\\Gender_m.php', 51)
+ 2 APPPATH\Controllers\Masterdata.php(111): App\Models\Gender_m->form(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->view('gender')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 16:36:56 --> syntax error, unexpected single-quoted string "audit_log_table", expecting ")"
+in APPPATH\Models\Audit_log_m.php on line 58.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Audit_log_m.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Audit_log_m')
+ 3 APPPATH\Models\Gender_m.php(65): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Audit_log_m')
+ 4 APPPATH\Models\Gender_m.php(93): App\Models\Gender_m->insert_logs('EDIT', [...])
+ 5 APPPATH\Controllers\Masterdata.php(145): App\Models\Gender_m->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->save('gender', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 16:37:31 --> syntax error, unexpected single-quoted string "audit_log_table", expecting ")"
+in APPPATH\Models\Audit_log_m.php on line 58.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Audit_log_m.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Audit_log_m')
+ 3 APPPATH\Models\Gender_m.php(65): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Audit_log_m')
+ 4 APPPATH\Models\Gender_m.php(93): App\Models\Gender_m->insert_logs('EDIT', [...])
+ 5 APPPATH\Controllers\Masterdata.php(145): App\Models\Gender_m->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->save('gender', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-23 16:45:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL' at line 1
+CRITICAL - 2022-09-23 16:45:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `position_id` as `ID`, concat(position_desc, "<br><b>Level</b>", position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `position_id` as `ID`, concat(position_desc, "<br><b>Level</b>", position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `position_id` as `ID`, concat(position_desc, "<br><b>Level</b>", position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `position_id` as `ID`, concat(position_desc, "<br><b>Level</b>", position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Position_m.php(47): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Masterdata.php(77): App\Models\Position_m->get()
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('position')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-23 16:46:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL' at line 1
+CRITICAL - 2022-09-23 16:46:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `position_id` as `ID`, concat(position_desc, "<br><b>Level</b>", position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `position_id` as `ID`, concat(position_desc, "<br><b>Level</b>", position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `position_id` as `ID`, concat(position_desc, "<br><b>Level</b>", position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `position_id` as `ID`, concat(position_desc, "<br><b>Level</b>", position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Position_m.php(47): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Masterdata.php(77): App\Models\Position_m->get()
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('position')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-23 16:48:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL' at line 1
+CRITICAL - 2022-09-23 16:48:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `position_id` as `ID`, concat(position_desc, \'<br><b>Level</b>\', position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `position_id` as `ID`, concat(position_desc, \'<br><b>Level</b>\', position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `position_id` as `ID`, concat(position_desc, \'<br><b>Level</b>\', position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `position_id` as `ID`, concat(position_desc, \'<br><b>Level</b>\', position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Position_m.php(47): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Masterdata.php(77): App\Models\Position_m->get()
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('position')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-23 16:48:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL' at line 1
+CRITICAL - 2022-09-23 16:48:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `position_id` as `ID`, concat(position_desc, \'<br><b>Level</b>\', position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `position_id` as `ID`, concat(position_desc, \'<br><b>Level</b>\', position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `position_id` as `ID`, concat(position_desc, \'<br><b>Level</b>\', position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `position_id` as `ID`, concat(position_desc, \'<br><b>Level</b>\', position_level) as DESC
+FROM `position`
+WHERE `position`.`position_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Position_m.php(47): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Masterdata.php(77): App\Models\Position_m->get()
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Masterdata->info('position')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdata))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

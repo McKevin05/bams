@@ -1,0 +1,174 @@
+ERROR - 2023-04-18 14:16:18 --> Unknown column 'business_other_business_id' in 'where clause'
+CRITICAL - 2023-04-18 14:16:18 --> Unknown column 'business_other_business_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `business`
+WHERE `business_other_business_id` = \'1\'
+AND `business`.`business_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `business`
+WHERE `business_other_business_id` = \'1\'
+AND `business`.`business_deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `business`
+WHERE `business_other_business_id` = \'1\'
+AND `business`.`business_deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `business`
+WHERE `business_other_business_id` = :business_other_business_id:
+AND `business`.`business_deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Business.php(61): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getView('1')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 14:16:41 --> Undefined variable: content
+in APPPATH/Views/template.php on line 65.
+ 1 APPPATH/Views/template.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: content', 'APPPATH/Views/template.php', 65, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH/Controllers/Business.php(88): view('template', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getView('1')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 14:28:58 --> Undefined variable: business_clearance_no
+in APPPATH/Views/business/view_business.php on line 233.
+ 1 APPPATH/Views/business/view_business.php(233): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: business_clearance_no', 'APPPATH/Views/business/view_business.php', 233, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/business/view_business.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('business/view_business', [], true)
+ 5 APPPATH/Views/template.php(65): view('business/view_business')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Business.php(83): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getView('1')
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 14:56:41 --> syntax error, unexpected '$this' (T_VARIABLE)
+in APPPATH/Models/Business_other_details_m.php on line 57.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/Business_other_details_m.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Business_other_details_m')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Business_other_details_m')
+ 4 [internal function]: spl_autoload_call('App\\Models\\Business_other_details_m')
+ 5 SYSTEMPATH/Config/Factories.php(152): class_exists('App\\Models\\Business_other_details_m')
+ 6 SYSTEMPATH/Config/Factories.php(102): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\Business_other_details_m')
+ 7 SYSTEMPATH/Config/Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH/Common.php(811): CodeIgniter\Config\Factories::models('App\\Models\\Business_other_details_m', [...], null)
+ 9 APPPATH/Controllers/Business.php(90): model('App\\Models\\Business_other_details_m', false)
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getTaxMapping()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 14:57:04 --> Unknown column 'business_address_street' in 'on clause'
+CRITICAL - 2023-04-18 14:57:04 --> Unknown column 'business_address_street' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `business_other_details`
+LEFT JOIN `street` ON `street_id` = `business_address_street`
+LEFT JOIN `business_line` ON `business_line` = `business_line_id`
+LEFT JOIN `business` ON `business_other_business_id` = `business_id`
+WHERE `business_clearance_status` = 1
+AND `business_other_details`.`business_other_deleted_at` IS NULL
+ORDER BY `business_eval_status` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `business_other_details`
+LEFT JOIN `street` ON `street_id` = `business_address_street`
+LEFT JOIN `business_line` ON `business_line` = `business_line_id`
+LEFT JOIN `business` ON `business_other_business_id` = `business_id`
+WHERE `business_clearance_status` = 1
+AND `business_other_details`.`business_other_deleted_at` IS NULL
+ORDER BY `business_eval_status` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `business_other_details`
+LEFT JOIN `street` ON `street_id` = `business_address_street`
+LEFT JOIN `business_line` ON `business_line` = `business_line_id`
+LEFT JOIN `business` ON `business_other_business_id` = `business_id`
+WHERE `business_clearance_status` = 1
+AND `business_other_details`.`business_other_deleted_at` IS NULL
+ORDER BY `business_eval_status` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `business_other_details`
+LEFT JOIN `street` ON `street_id` = `business_address_street`
+LEFT JOIN `business_line` ON `business_line` = `business_line_id`
+LEFT JOIN `business` ON `business_other_business_id` = `business_id`
+WHERE `business_clearance_status` = :business_clearance_status:
+AND `business_other_details`.`business_other_deleted_at` IS NULL
+ORDER BY `business_eval_status` ASC', [...], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/Business_other_details_m.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Business.php(92): App\Models\Business_other_detail_m->list()
+ 9 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getTaxMapping()
+10 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+11 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 21:40:30 --> Argument 1 passed to CodeIgniter\Database\BaseConnection::query() must be of the type string, null given, called in /home/u895244394/domains/ortadeltech.com/public_html/bams/app/Controllers/Residents.php on line 197
+in SYSTEMPATH/Database/BaseConnection.php on line 581.
+ 1 APPPATH/Controllers/Residents.php(197): CodeIgniter\Database\BaseConnection->query(null)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->report()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 22:51:10 --> Call to undefined function show()
+in APPPATH/Views/business/index.php on line 16.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('business/index', [], true)
+ 4 APPPATH/Views/template.php(65): view('business/index')
+ 5 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 8 APPPATH/Controllers/Business.php(19): view('template', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getIndex()
+10 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+11 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 22:53:08 --> Call to undefined function show()
+in APPPATH/Views/business/index.php on line 16.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('business/index', [], true)
+ 4 APPPATH/Views/template.php(65): view('business/index')
+ 5 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 8 APPPATH/Controllers/Business.php(19): view('template', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getIndex()
+10 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+11 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 22:53:15 --> Call to undefined function show()
+in APPPATH/Views/business/index.php on line 16.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('business/index', [], true)
+ 4 APPPATH/Views/template.php(65): view('business/index')
+ 5 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 8 APPPATH/Controllers/Business.php(19): view('template', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getIndex()
+10 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+11 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 23:57:18 --> Undefined property: stdClass::$business_other_detail_id
+in APPPATH/Views/business/view_business.php on line 257.
+ 1 APPPATH/Views/business/view_business.php(257): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$business_other_detail_id', 'APPPATH/Views/business/view_business.php', 257, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/business/view_business.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('business/view_business', [], true)
+ 5 APPPATH/Views/template.php(65): view('business/view_business')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Business.php(83): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getView('1')
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

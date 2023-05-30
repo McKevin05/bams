@@ -1,0 +1,143 @@
+@import "./fonts";
+@import "./forms";
+@import "./login";
+@import "./sidenav";
+@import "./content";
+@import "./modals";
+@import "./tables";
+
+@import "./custom_resident";
+@import "./custom_settings";
+@import "./custom_masterdata";
+@import "./custom_dashboard";
+
+@import "./footer";
+@import "./responsive";
+
+:root{
+    --body-bg:#f0f2f5;
+    --login-bg-container:url('../images/bg.jpg');
+    --login-bg:url('../images/bg-pio.jpeg');
+    --heading-font:'Roboto','HelveticaNeue','Helvetica Neue','Helvetica-Neue',Helvetica,Arial,sans-serif;
+    --default-font:'Poppins','HelveticaNeue','Helvetica Neue','Helvetica-Neue',Arial,sans-serif;
+    --default-font-size:15px;
+    --default-font-color:rgb(36, 37, 37);
+    --primary-solid-color:#111c4e;
+    --primary-color:#0c2236;
+    --primary-light-color:#0b2e4f;
+    --secondary-color:#184d74;
+    --secondary-light-color:#075b96;
+    --tertiary-color:#f5ec3a;
+    --sidebar-font-size:13px;
+    --sidebar-text-color:#fff;
+    --sidebar-bg:var(--primary-color);
+    --sidebar-dropdown-link-bg:var(--primary-color);
+    --navbar-font-size:"";
+    --navbar-bg:rgb(36, 37, 37);
+    --navbar-color:rgb(201, 194, 183);
+    --button-text-transform:capitalize;
+}
+
+// Body 1
+$body-letter-s :0.4px;
+
+// Body 2
+// $body-font-size :15pt;
+// $body-line-h :20;
+// $body-letter-s :0.1%;
+
+body
+{
+    font-size: var(--default-font-size);
+    letter-spacing: $body-letter-s;
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-bg);
+    font-family: var(--default-font);
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-transform: capitalize;
+    font-family: var(--heading-font);
+}
+
+// h1{
+//     font-size: 96pt;
+//     line-height: 120;
+//     letter-spacing: -1.5%;
+// }
+
+// h2{
+//     font-size: 60pt;
+//     line-height: 80;
+//     letter-spacing: -0.5%;
+// }
+
+// h3{
+//     font-size: 48pt;
+//     line-height: 68;
+//     letter-spacing: 0%;
+// }
+
+// h4{
+//     font-size: 34pt;
+//     line-height: 48;
+//     letter-spacing: 0.25%;
+// }
+
+// h5{
+//     font-size: 24pt;
+//     line-height: 34;
+//     letter-spacing: 0%;
+// }
+
+// h6{
+//     font-size: 20pt;
+//     line-height: 28;
+//     letter-spacing: 0.15%;
+// }
+
+small{
+    font-size: 13px;
+}
+
+
+p, .alert{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.pointer-ct
+{
+    cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track{
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+background: #555; 
+}
+
+
+#btn-back-to-top{
+    position: fixed;
+    bottom: 46px;
+    right: 20px;
+    display: none;
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+  

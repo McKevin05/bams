@@ -1,0 +1,13 @@
+CRITICAL - 2023-01-17 20:56:15 --> Invalid file: asset/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('asset/index.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('asset/index', [], true)
+ 3 APPPATH/Views/template.php(48): view('asset/index')
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 7 APPPATH/Controllers/Asset.php(16): view('template', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Asset->getIndex()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Asset))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

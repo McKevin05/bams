@@ -1,0 +1,81 @@
+CRITICAL - 2023-01-18 02:03:41 --> Undefined property: App\Controllers\Residents::$gender
+in APPPATH/Controllers/Residents.php on line 29.
+ 1 APPPATH/Controllers/Residents.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Residents::$gender', 'APPPATH/Controllers/Residents.php', 29, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 02:04:23 --> Undefined property: App\Controllers\Residents::$gender
+in APPPATH/Controllers/Residents.php on line 29.
+ 1 APPPATH/Controllers/Residents.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Residents::$gender', 'APPPATH/Controllers/Residents.php', 29, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 02:04:28 --> Undefined property: App\Controllers\Residents::$resident
+in APPPATH/Controllers/Residents.php on line 30.
+ 1 APPPATH/Controllers/Residents.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Residents::$resident', 'APPPATH/Controllers/Residents.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 02:04:51 --> Undefined property: App\Controllers\Residents::$resident
+in APPPATH/Controllers/Residents.php on line 30.
+ 1 APPPATH/Controllers/Residents.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Residents::$resident', 'APPPATH/Controllers/Residents.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 02:11:02 --> Undefined property: App\Controllers\Residents::$resident
+in APPPATH/Controllers/Residents.php on line 40.
+ 1 APPPATH/Controllers/Residents.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Residents::$resident', 'APPPATH/Controllers/Residents.php', 40, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 02:11:23 --> Undefined property: App\Controllers\Residents::$resident
+in APPPATH/Controllers/Residents.php on line 40.
+ 1 APPPATH/Controllers/Residents.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Residents::$resident', 'APPPATH/Controllers/Residents.php', 40, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 02:11:25 --> Undefined property: App\Controllers\Residents::$resident
+in APPPATH/Controllers/Residents.php on line 40.
+ 1 APPPATH/Controllers/Residents.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Residents::$resident', 'APPPATH/Controllers/Residents.php', 40, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-18 02:14:29 --> Unknown column 'resident_info_created_at' in 'field list'
+CRITICAL - 2023-01-18 02:14:29 --> Unknown column 'resident_info_created_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `resident_info` (`lastname`, `firstname`, `middlename`, `gender`, `bdate`, `resident_info_created_at`, `resident_info_updated_at`) VALUES (\'asd\', \'asd\', \'asd\', \'1\', \'2023-01-06\', \'2023-01-18 02:14:29\', \'2023-01-18 02:14:29\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `resident_info` (`lastname`, `firstname`, `middlename`, `gender`, `bdate`, `resident_info_created_at`, `resident_info_updated_at`) VALUES (\'asd\', \'asd\', \'asd\', \'1\', \'2023-01-06\', \'2023-01-18 02:14:29\', \'2023-01-18 02:14:29\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `resident_info` (`lastname`, `firstname`, `middlename`, `gender`, `bdate`, `resident_info_created_at`, `resident_info_updated_at`) VALUES (\'asd\', \'asd\', \'asd\', \'1\', \'2023-01-06\', \'2023-01-18 02:14:29\', \'2023-01-18 02:14:29\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `resident_info` (`lastname`, `firstname`, `middlename`, `gender`, `bdate`, `resident_info_created_at`, `resident_info_updated_at`) VALUES (:lastname:, :firstname:, :middlename:, :gender:, :bdate:, :resident_info_created_at:, :resident_info_updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/Residents.php(40): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-18 02:17:04 --> Unknown column 'resident_info_created_at' in 'field list'
+CRITICAL - 2023-01-18 02:17:04 --> Unknown column 'resident_info_created_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `resident_info` (`lastname`, `firstname`, `middlename`, `gender`, `bdate`, `resident_info_created_at`, `resident_info_updated_at`) VALUES (\'asd\', \'asd\', \'asd\', \'1\', \'2023-01-06\', \'2023-01-18 02:17:04\', \'2023-01-18 02:17:04\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `resident_info` (`lastname`, `firstname`, `middlename`, `gender`, `bdate`, `resident_info_created_at`, `resident_info_updated_at`) VALUES (\'asd\', \'asd\', \'asd\', \'1\', \'2023-01-06\', \'2023-01-18 02:17:04\', \'2023-01-18 02:17:04\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `resident_info` (`lastname`, `firstname`, `middlename`, `gender`, `bdate`, `resident_info_created_at`, `resident_info_updated_at`) VALUES (\'asd\', \'asd\', \'asd\', \'1\', \'2023-01-06\', \'2023-01-18 02:17:04\', \'2023-01-18 02:17:04\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `resident_info` (`lastname`, `firstname`, `middlename`, `gender`, `bdate`, `resident_info_created_at`, `resident_info_updated_at`) VALUES (:lastname:, :firstname:, :middlename:, :gender:, :bdate:, :resident_info_created_at:, :resident_info_updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/Residents.php(41): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
