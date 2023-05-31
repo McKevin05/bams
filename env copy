@@ -21,7 +21,7 @@ CI_ENVIRONMENT = development
 # APP
 #--------------------------------------------------------------------
 
-app.baseURL = 'http://localhost/voting_system/'
+app.baseURL = 'http://localhost/bams/'
 # If you have trouble with `.`, you could also use `_`.
 # app_baseURL = ''
 # app.forceGlobalSecureRequests = false
@@ -41,7 +41,7 @@ app.baseURL = 'http://localhost/voting_system/'
 #--------------------------------------------------------------------
 
 database.default.hostname = localhost
-database.default.database = voting_system
+database.default.database = 
 database.default.username = root
 database.default.password = 
 database.default.DBDriver = MySQLi

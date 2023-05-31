@@ -243,99 +243,68 @@
 					</div>
 				</div>
 			</div>
-
+			
 			<!-- PROPERTY -->
-			<div class="tab-pane fade" id="property-tab" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-				<hr>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-							<div class="row">
-								<div class="col-8">
-									<h2><?php  ?></h2>
-									<small>TOTAL PROPERTY</small>
-								</div>
-								<div class="col-4 text-end">
-									<i class="fa fa-store h1 mt-2"></i>
-								</div>
+			<div class="tab-pane fade" id="property-tab" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+				<div class="row gx-3 dashboard mt-3">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-warning"><i class="fas fa-building"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0">Total Apartment</span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
 							</div>
-						</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-								<div class="row">
-									<div class="col-8">
-										<h2><?php echo count($street) ?></h2>
-										<small>TOTAL </small>
-									</div>
-									<div class="col-4 text-end">
-										<i class="fa fa-city h1 mt-2"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-								<div class="row">
-									<div class="col-8">
-										<h2><?php echo count($street) ?></h2>
-										<small>TOTAL </small>
-									</div>
-									<div class="col-4 text-end">
-										<i class="fas fa-users h1 mt-2"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-								<div class="row">
-									<div class="col-8">
-										<h2><?php  ?></h2>
-										<small>TOTAL </small>
-									</div>
-									<div class="col-4 text-end">
-										<i class="fas fa-users h1 mt-2"></i>
-									</div>
-								</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
 							</div>
 						</div>
 					</div>
-				</div>
-				
-				<hr>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-							<div class="card bg-default">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<canvas id="ageChart"></canvas>
-										</div>
-									</div>
-								</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-success"><i class="fas fa-users"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0">Total Rentee</span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
+							</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-							<div class="card bg-default">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<canvas id="genderChart"></canvas>
-										</div>
-									</div>
-								</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-danger"><i class="fas fa-city"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0">Total Condominium / Building</span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
+							</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-							<div class="card bg-default">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<!-- Dito sir yung sa Voters -->
-											<canvas id="genderChart"></canvas>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-primary"><i class="fas fa-building"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0">Total Vacants / Open Spaces</span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
+							</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+								<div class="card bg-default">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+												<div class="d-flex justify-content-center text-center border-bottom mb-2"><b>Line of Property</b></div>
+												<canvas id="lineBusinessChart"></canvas>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -345,99 +314,85 @@
 				</div>
 			</div>
 
-			<!-- PROJECT AND PROGRAMS -->
-			<div class="tab-pane fade" id="proj-prog-tab" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-				<hr>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-							<div class="row">
-								<div class="col-8">
-									<h2><?php  ?></h2>
-									<small>TOTAL PROJECT</small>
-								</div>
-								<div class="col-4 text-end">
-									<i class="fa fa-store h1 mt-2"></i>
-								</div>
-							</div>
-						</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
+			<!-- PROPERTY -->
+
+			<!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+						<div class="card bg-default">
+							<div class="card-body">
 								<div class="row">
-									<div class="col-8">
-										<h2><?php echo count($street) ?></h2>
-										<small>TOTAL PROGRAMS</small>
-									</div>
-									<div class="col-4 text-end">
-										<i class="fa fa-city h1 mt-2"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-								<div class="row">
-									<div class="col-8">
-										<h2><?php echo count($street) ?></h2>
-										<small>TOTAL</small>
-									</div>
-									<div class="col-4 text-end">
-										<i class="fas fa-users h1 mt-2"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-								<div class="row">
-									<div class="col-8">
-										<h2><?php  ?></h2>
-										<small>TOTAL</small>
-									</div>
-									<div class="col-4 text-end">
-										<i class="fas fa-users h1 mt-2"></i>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<canvas id="ageChart"></canvas>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
-				<hr>
+			</div> -->
 
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-							<div class="card bg-default">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<canvas id="ageChart"></canvas>
-										</div>
-									</div>
-								</div>
+			<!-- PROJECT AND PROGRAMS -->
+			<div class="tab-pane fade" id="proj-prog-tab" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+				<div class="row gx-3 dashboard mt-3">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-warning"><i class="fas fa-briefcase"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0">Total Projects</span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
+							</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-							<div class="card bg-default">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<canvas id="genderChart"></canvas>
-										</div>
-									</div>
-								</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-success"><i class="fas fa-building-circle-check"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0"></span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
+							</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-							<div class="card bg-default">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<!-- Dito sir yung sa Voters -->
-											<canvas id="genderChart"></canvas>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-danger"><i class="fas fa-building-circle-xmark"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0"></span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
+							</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-primary"><i class="fas fa-business-time"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0"></span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
+							</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+								<div class="card bg-default">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+												<div class="d-flex justify-content-center text-center border-bottom mb-2"><b>Line of Business</b></div>
+												<canvas id="lineBusinessChart"></canvas>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -448,97 +403,66 @@
 			</div>
 
 			<!-- CERTIFICATES -->
-			<div class="tab-pane fade" id="certificate-tab" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-				<hr>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-							<div class="row">
-								<div class="col-8">
-									<h2><?php  ?></h2>
-									<small>TOTAL PENDING CERTIFICATES</small>
-								</div>
-								<div class="col-4 text-end">
-									<i class="fa fa-store h1 mt-2"></i>
-								</div>
+			<div class="tab-pane fade" id="certificate-tab" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+				<div class="row gx-3 dashboard mt-3">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-warning"><i class="fas fa-briefcase"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0">Pending Certificates</span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
 							</div>
-						</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-								<div class="row">
-									<div class="col-8">
-										<h2><?php echo count($street) ?></h2>
-										<small>TOTAL ON-GOING CERTIFICATES</small>
-									</div>
-									<div class="col-4 text-end">
-										<i class="fa fa-city h1 mt-2"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-								<div class="row">
-									<div class="col-8">
-										<h2><?php echo count($street) ?></h2>
-										<small>TOTAL RELEASED CERTIFICATES</small>
-									</div>
-									<div class="col-4 text-end">
-										<i class="fas fa-users h1 mt-2"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-3">
-							<div class="mb-3 px-2 py-2 fw-semibold text-dark-emphasis bg-secondary-subtle border border-secondary-subtle rounded-2">
-								<div class="row">
-									<div class="col-8">
-										<h2><?php  ?></h2>
-										<small>TOTAL CANCELLED CERTIFICATES</small>
-									</div>
-									<div class="col-4 text-end">
-										<i class="fas fa-users h1 mt-2"></i>
-									</div>
-								</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<hr>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-							<div class="card bg-default">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<canvas id="ageChart"></canvas>
-										</div>
-									</div>
-								</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-primary"><i class="fas fa-business-time"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0">On-going Certificates</span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
+							</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-							<div class="card bg-default">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<canvas id="genderChart"></canvas>
-										</div>
-									</div>
-								</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-danger"><i class="fas fa-briefcase"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0">Released Certificates</span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
+							</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-							<div class="card bg-default">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<!-- Dito sir yung sa Voters -->
-											<canvas id="genderChart"></canvas>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="min-width: 230px;">
+						<div class="card card-box">
+							<div class="card-icon bg-primary"><i class="fas fa-business-time"></i></div>
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<span class="h6 w-50 m-0">Cancelled Certificates</span>
+								<span class="h4 w-50 m-0 text-end" id="">0</span>
+							</div>
+							<div class="card-footer">
+								<small><i class="fas fa-calendar text-mute"></i> &nbsp;Data as of Today </small>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+								<div class="card bg-default">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+												<div class="d-flex justify-content-center text-center border-bottom mb-2"><b>Line of Certificates</b></div>
+												<canvas id="lineBusinessChart"></canvas>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -546,8 +470,6 @@
 						</div>
 					</div>
 				</div>
-				</div>
-
 			</div>
 			</div>
 		</div>
