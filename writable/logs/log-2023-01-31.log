@@ -1,0 +1,281 @@
+CRITICAL - 2023-01-31 16:08:26 --> Call to undefined function App\Controllers\dump()
+in APPPATH/Controllers/Residents.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->getIndex()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 16:08:45 --> Call to undefined function App\Controllers\dump()
+in APPPATH/Controllers/Residents.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->getIndex()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 16:08:47 --> Call to undefined function App\Controllers\dump()
+in APPPATH/Controllers/Residents.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->getIndex()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 16:28:11 --> syntax error, unexpected ','
+in APPPATH/Views/residents/index.php on line 49.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('residents/index', [], true)
+ 3 APPPATH/Views/template.php(51): view('residents/index')
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 7 APPPATH/Controllers/Residents.php(31): view('template', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->getIndex()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-31 21:24:43 --> Unknown column 'sector' in 'where clause'
+CRITICAL - 2023-01-31 21:24:43 --> Unknown column 'sector' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE `sector` = \'pwd\'
+AND `resident_info`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE `sector` = \'pwd\'
+AND `resident_info`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE `sector` = \'pwd\'
+AND `resident_info`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE `sector` = :sector:
+AND `resident_info`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/Resident_m.php(66): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Models/Resident_m.php(84): App\Models\Resident_m->get()
+ 9 APPPATH/Controllers/Dashboard.php(23): App\Models\Resident_m->report_resident('pwd')
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Dashboard->resident_report('pwd')
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 21:26:15 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+in APPPATH/Views/template_print_with_header.php on line 29.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_print_with_header', [], true)
+ 3 APPPATH/Controllers/Dashboard.php(29): view('template_print_with_header', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Dashboard->resident_report('pwd')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 21:27:01 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+in APPPATH/Views/template_print_with_header.php on line 29.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_print_with_header', [], true)
+ 3 APPPATH/Controllers/Dashboard.php(29): view('template_print_with_header', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Dashboard->resident_report('pwd')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 21:27:03 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+in APPPATH/Views/template_print_with_header.php on line 29.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_print_with_header', [], true)
+ 3 APPPATH/Controllers/Dashboard.php(29): view('template_print_with_header', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Dashboard->resident_report('pwd')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 21:27:04 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+in APPPATH/Views/template_print_with_header.php on line 29.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_print_with_header', [], true)
+ 3 APPPATH/Controllers/Dashboard.php(29): view('template_print_with_header', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Dashboard->resident_report('pwd')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 21:27:37 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+in APPPATH/Views/template_print_with_header.php on line 29.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_print_with_header', [], true)
+ 3 APPPATH/Controllers/Dashboard.php(29): view('template_print_with_header', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Dashboard->resident_report('pwd')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 21:33:04 --> Undefined variable: content
+in APPPATH/Views/template.php on line 51.
+ 1 APPPATH/Views/template.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: content', 'APPPATH/Views/template.php', 51, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(30): view('template', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Dashboard->resident_report('senior')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 22:37:32 --> Undefined variable: project
+in APPPATH/Controllers/Project.php on line 51.
+ 1 APPPATH/Controllers/Project.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: project', 'APPPATH/Controllers/Project.php', 51, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->getView('1')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 22:37:55 --> Undefined variable: project_title
+in APPPATH/Views/project/view_project.php on line 40.
+ 1 APPPATH/Views/project/view_project.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: project_title', 'APPPATH/Views/project/view_project.php', 40, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/project/view_project.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('project/view_project', [], true)
+ 5 APPPATH/Views/template.php(51): view('project/view_project')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Project.php(54): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->getView('1')
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 22:39:01 --> Undefined variable: project_title
+in APPPATH/Views/project/view_project.php on line 40.
+ 1 APPPATH/Views/project/view_project.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: project_title', 'APPPATH/Views/project/view_project.php', 40, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/project/view_project.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('project/view_project', [], true)
+ 5 APPPATH/Views/template.php(51): view('project/view_project')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Project.php(54): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->getView('1')
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 23:06:25 --> Undefined variable: list
+in APPPATH/Views/blotter/index.php on line 48.
+ 1 APPPATH/Views/blotter/index.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: list', 'APPPATH/Views/blotter/index.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/blotter/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('blotter/index', [], true)
+ 5 APPPATH/Views/template.php(51): view('blotter/index')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Blotter.php(20): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\blotter->getIndex()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blotter))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 23:06:39 --> Undefined variable: list
+in APPPATH/Views/blotter/index.php on line 48.
+ 1 APPPATH/Views/blotter/index.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: list', 'APPPATH/Views/blotter/index.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/blotter/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('blotter/index', [], true)
+ 5 APPPATH/Views/template.php(51): view('blotter/index')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Blotter.php(20): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\blotter->getIndex()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blotter))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 23:06:41 --> Undefined variable: list
+in APPPATH/Views/blotter/index.php on line 48.
+ 1 APPPATH/Views/blotter/index.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: list', 'APPPATH/Views/blotter/index.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/blotter/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('blotter/index', [], true)
+ 5 APPPATH/Views/template.php(51): view('blotter/index')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Blotter.php(20): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\blotter->getIndex()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blotter))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 23:06:43 --> Undefined property: stdClass::$blotter_incident_status
+in APPPATH/Views/blotter/index.php on line 53.
+ 1 APPPATH/Views/blotter/index.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$blotter_incident_status', 'APPPATH/Views/blotter/index.php', 53, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/blotter/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('blotter/index', [], true)
+ 5 APPPATH/Views/template.php(51): view('blotter/index')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Blotter.php(20): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\blotter->getIndex()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blotter))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 23:07:02 --> Undefined property: stdClass::$blotter_incident_status
+in APPPATH/Views/blotter/index.php on line 53.
+ 1 APPPATH/Views/blotter/index.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$blotter_incident_status', 'APPPATH/Views/blotter/index.php', 53, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/blotter/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('blotter/index', [], true)
+ 5 APPPATH/Views/template.php(51): view('blotter/index')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Blotter.php(20): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\blotter->getIndex()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blotter))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 23:07:03 --> Undefined property: stdClass::$blotter_incident_status
+in APPPATH/Views/blotter/index.php on line 53.
+ 1 APPPATH/Views/blotter/index.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$blotter_incident_status', 'APPPATH/Views/blotter/index.php', 53, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/blotter/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('blotter/index', [], true)
+ 5 APPPATH/Views/template.php(51): view('blotter/index')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Blotter.php(20): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\blotter->getIndex()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blotter))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-31 23:56:40 --> Unknown column 'incident_created_at' in 'field list'
+CRITICAL - 2023-01-31 23:56:40 --> Unknown column 'incident_created_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `incident` (`incident_datetime`, `incident_action_taken`, `incident_incharge`, `incident_description`, `incident_created_at`, `incident_updated_at`) VALUES (\'2023-01-13T13:58\', \'asdasd\', \'dfgdfg\', \'asfafdsfadasdasddasdasd\', \'2023-01-31 23:56:40\', \'2023-01-31 23:56:40\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `incident` (`incident_datetime`, `incident_action_taken`, `incident_incharge`, `incident_description`, `incident_created_at`, `incident_updated_at`) VALUES (\'2023-01-13T13:58\', \'asdasd\', \'dfgdfg\', \'asfafdsfadasdasddasdasd\', \'2023-01-31 23:56:40\', \'2023-01-31 23:56:40\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `incident` (`incident_datetime`, `incident_action_taken`, `incident_incharge`, `incident_description`, `incident_created_at`, `incident_updated_at`) VALUES (\'2023-01-13T13:58\', \'asdasd\', \'dfgdfg\', \'asfafdsfadasdasddasdasd\', \'2023-01-31 23:56:40\', \'2023-01-31 23:56:40\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `incident` (`incident_datetime`, `incident_action_taken`, `incident_incharge`, `incident_description`, `incident_created_at`, `incident_updated_at`) VALUES (:incident_datetime:, :incident_action_taken:, :incident_incharge:, :incident_description:, :incident_created_at:, :incident_updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/Incident.php(40): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Incident->getAdd()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incident))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 23:58:25 --> Undefined variable: id
+in APPPATH/Controllers/Incident.php on line 52.
+ 1 APPPATH/Controllers/Incident.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Controllers/Incident.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Incident->getView('1')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Incident))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

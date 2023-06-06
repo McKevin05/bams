@@ -1,0 +1,141 @@
+.sidebar
+{
+    background: var(--primary-color);
+    color: var(--sidebar-text-color);
+
+    .profile-details
+    {
+        width: 260px;
+        display: flex;
+        align-items: center;
+        background: var(--secondary-color);
+        padding: 12px 0;
+        transition: all 0.5s ease;
+    } 
+
+    .profile-details .profile-content
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .lower_nav
+    {
+        width: 260px;
+        display: flex;
+        align-items: center;
+        background: var(--primary-color);
+        color: var(--sidebar-text-color);
+        padding: 0;
+        transition: all 0.5s ease;
+        position: fixed;
+        bottom: 0;
+
+        &:hover
+        {
+            background: darkred;
+
+            i 
+            {
+                @extend .fa-spin-hover;
+            }
+        }
+
+        i
+        {
+            height: 50px;
+            min-width: 78px;
+            text-align: center;
+            line-height: 50px;
+            color: var(--sidebar-text-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+             
+        }
+    }
+    
+    ul.nav-links
+    {
+        overflow-y: auto;
+        padding-top: 0;
+        // height:500px;
+        padding: 0;
+        
+        
+        li
+        {
+            &:hover
+            {
+                background: var(--secondary-color);
+                opacity: .80;
+            }
+            .sub-menu
+            {
+                background: var(--secondary-color);
+                opacity: .80;
+                &:hover, &:active, &:focus 
+                {
+                    background: var(--secondary-color);
+                    opacity: .80;
+                }
+            }
+        }
+    }
+
+    .fa-spin-hover 
+    {
+        &:hover
+        {
+            animation: shake 2s infinite linear;
+        }
+
+        @keyframes shake {
+            0% { transform: skewX(-15deg); }
+            5% { transform: skewX(15deg); }
+            10% { transform: skewX(-15deg); }
+            15% { transform: skewX(15deg); }
+            20% { transform: skewX(0deg); }
+            100% { transform: skewX(0deg); }  
+          }
+    }
+
+    .logo-details
+    {
+        img
+        {
+            padding: 10px;
+            width: 100px;
+        }
+    }
+
+    
+}
+
+.close
+{
+    .logo-details img
+    {
+        width: 77px;
+    }
+
+    .lower_nav
+    {
+        width: 78px;
+
+        span
+        {
+            display: none;
+        }
+    }
+
+    .profile-details
+    {
+        background: var(--secondary-color);
+    }
+
+    .icon
+    {
+        height: 50px;
+    }
+}   

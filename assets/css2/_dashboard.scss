@@ -1,0 +1,34 @@
+.dashboard{
+    .card-box{
+        margin-top: 50px;
+        .card-icon{
+            float: left;
+            padding: 15px;
+            margin-left: 11px;
+            margin-top: -30px;
+            border-radius: 3px;
+            width: 95px;
+            text-align: center;
+            i.fas{
+                font-size: 50px;
+                color: #fff;
+            }
+        }
+        .card-body{
+            hr{
+                margin: 0;
+            }
+            .card-title{
+                margin-top: -10px;
+                text-align: right;
+                font-weight: 700;
+                font-size: 30px;
+            }
+            .card-text{
+                text-align: right;
+                margin-top: -42px;
+                font-size: 13px;
+            }
+        }
+    }
+}

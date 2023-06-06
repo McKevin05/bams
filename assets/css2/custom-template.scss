@@ -1,0 +1,84 @@
+@import "./fonts";
+@import "./forms";
+@import "./login";
+@import "./sidenav";
+@import "./content";
+@import "./modals";
+@import "./tables";
+
+@import "./custom_resident";
+@import "./custom_settings";
+@import "./custom_masterdata";
+@import "./dashboard";
+
+@import "./footer";
+@import "./responsive";
+body
+{
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+/* width */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track{
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+background: #555; 
+}
+
+:root{
+    --body-bg:#eee;
+    --login-bg-container:url('../images/bg.jpg');
+    --login-bg:url('../images/bg-pio.jpeg');
+    --heading-font:'Roboto','HelveticaNeue','Helvetica Neue','Helvetica-Neue',Helvetica,Arial,sans-serif;
+    --default-font:'Poppins','HelveticaNeue','Helvetica Neue','Helvetica-Neue',Arial,sans-serif;
+    --default-font-size:15px;
+    --default-font-color:rgb(36, 37, 37);
+    --primary-solid-color:#111c4e;
+    --primary-color:#0c2236;
+    --primary-light-color:#0b2e4f;
+    --secondary-color:#184d74;
+    --secondary-light-color:#075b96;
+    --tertiary-color:#f5ec3a;
+    --sidebar-font-size:13px;
+    --sidebar-text-color:#fff;
+    --sidebar-bg:var(--primary-color);
+    --sidebar-dropdown-link-bg:var(--primary-color);
+    --navbar-font-size:"";
+    --navbar-bg:rgb(36, 37, 37);
+    --navbar-color:rgb(201, 194, 183);
+    --button-text-transform:capitalize;
+}
+
+body
+{
+    font-size: var(--default-font-size);
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-bg);
+    font-family: var(--default-font);
+}
+
+@media  only screen and (max-width: 992px)
+{
+    :root{
+        --default-font-size:13px;
+    }
+
+    .btn{
+        font-size: 13px;
+    }
+}

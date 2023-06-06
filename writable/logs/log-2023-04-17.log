@@ -1,0 +1,464 @@
+ERROR - 2023-04-17 08:39:10 --> Unknown column 'certificates_type' in 'where clause'
+CRITICAL - 2023-04-17 08:39:10 --> Unknown column 'certificates_type' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `certificates_id` as `ID`, `certificates_desc` as `DESC`
+FROM `certificates`
+WHERE `certificates_type` = \'CERTIFICATION\'
+AND `certificates`.`certificates_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `certificates_id` as `ID`, `certificates_desc` as `DESC`
+FROM `certificates`
+WHERE `certificates_type` = \'CERTIFICATION\'
+AND `certificates`.`certificates_deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `certificates_id` as `ID`, `certificates_desc` as `DESC`
+FROM `certificates`
+WHERE `certificates_type` = \'CERTIFICATION\'
+AND `certificates`.`certificates_deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `certificates_id` as `ID`, `certificates_desc` as `DESC`
+FROM `certificates`
+WHERE `certificates_type` = :certificates_type:
+AND `certificates`.`certificates_deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/Certificates_m.php(113): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Certificate.php(30): App\Models\Certificates_m->dropdown()
+ 9 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Certificate->getAdd()
+10 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Certificate))
+11 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:07:10 --> Undefined property: stdClass::$business_line_desc
+in APPPATH/Views/business/index.php on line 104.
+ 1 APPPATH/Views/business/index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$business_line_desc', 'APPPATH/Views/business/index.php', 104, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/business/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('business/index', [], true)
+ 5 APPPATH/Views/template.php(65): view('business/index')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Business.php(19): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getIndex()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:09:12 --> Call to undefined method App\Models\Business_m::get_data
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Business.php(17): CodeIgniter\Model->__call('get_data', [])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getIndex()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:10:30 --> Undefined variable: certBusiness
+in APPPATH/Views/certificate/temp_with_header.php on line 70.
+ 1 APPPATH/Views/certificate/temp_with_header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: certBusiness', 'APPPATH/Views/certificate/temp_with_header.php', 70, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/certificate/temp_with_header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('certificate/temp_with_header', [], true)
+ 5 APPPATH/Views/template.php(86): view('certificate/temp_with_header')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Certificate.php(106): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Certificate->getView('1')
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Certificate))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:10:56 --> Undefined variable: certBusiness
+in APPPATH/Views/certificate/temp_with_header.php on line 70.
+ 1 APPPATH/Views/certificate/temp_with_header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: certBusiness', 'APPPATH/Views/certificate/temp_with_header.php', 70, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/certificate/temp_with_header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('certificate/temp_with_header', [], true)
+ 5 APPPATH/Views/template.php(86): view('certificate/temp_with_header')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Certificate.php(106): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Certificate->getView('1')
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Certificate))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 09:13:55 --> Unknown column 'project_year' in 'where clause'
+CRITICAL - 2023-04-17 09:13:55 --> Unknown column 'project_year' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `projects`
+WHERE `project_year` = \'2023\'
+AND `projects`.`project_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `projects`
+WHERE `project_year` = \'2023\'
+AND `projects`.`project_deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `projects`
+WHERE `project_year` = \'2023\'
+AND `projects`.`project_deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE `project_year` = :project_year:
+AND `projects`.`project_deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Project.php(65): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 09:14:16 --> Unknown column 'project_year' in 'where clause'
+CRITICAL - 2023-04-17 09:14:16 --> Unknown column 'project_year' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `projects`
+WHERE `project_year` = \'2023\'
+AND `projects`.`project_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `projects`
+WHERE `project_year` = \'2023\'
+AND `projects`.`project_deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `projects`
+WHERE `project_year` = \'2023\'
+AND `projects`.`project_deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE `project_year` = :project_year:
+AND `projects`.`project_deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Project.php(65): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:16:33 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:16:34 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:16:40 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 09:16:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%%' ESCAPE '!'
+AND `resident_info`.`deleted_at` IS NULL' at line 7
+CRITICAL - 2023-04-17 09:16:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%%' ESCAPE '!'
+AND `resident_info`.`deleted_at` IS NULL' at line 7
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE \'%%\' ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE \'%%\' ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE \'%%\' ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE :: ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/Resident_m.php(96): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Residents.php(59): App\Models\Resident_m->get()
+ 9 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->getIndex()
+10 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+11 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 09:17:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%%' ESCAPE '!'
+AND `resident_info`.`deleted_at` IS NULL' at line 7
+CRITICAL - 2023-04-17 09:17:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%%' ESCAPE '!'
+AND `resident_info`.`deleted_at` IS NULL' at line 7
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE \'%%\' ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE \'%%\' ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE \'%%\' ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE :: ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/Resident_m.php(96): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Residents.php(59): App\Models\Resident_m->get()
+ 9 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->getIndex()
+10 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+11 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:17:25 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:17:27 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:17:32 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:18:03 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:18:05 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:18:13 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:18:44 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2000')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:18:46 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2000')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:18:51 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2000')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:19:41 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2000')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:19:55 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2000')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:19:56 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2000')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:20:02 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2000')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:20:03 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2000')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:20:04 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2000')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 09:20:28 --> Invalid file: template_excel.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_excel.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template_excel', [], true)
+ 3 APPPATH/Controllers/Project.php(76): view('template_excel', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Project->downloadAIP('2023')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 09:39:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%%' ESCAPE '!'
+AND `resident_info`.`deleted_at` IS NULL' at line 7
+CRITICAL - 2023-04-17 09:39:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%%' ESCAPE '!'
+AND `resident_info`.`deleted_at` IS NULL' at line 7
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE \'%%\' ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE \'%%\' ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE \'%%\' ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resident_info`
+LEFT JOIN `street` ON `street_id` = `street`
+LEFT JOIN `gender` ON `gender_id` = `gender`
+LEFT JOIN `civil_status` ON `civil_status_id` = `civil_status`
+LEFT JOIN `sector` ON `sector_id` = `status`
+WHERE  LIKE :: ESCAPE \'!\'
+AND `resident_info`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/Resident_m.php(96): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Residents.php(59): App\Models\Resident_m->get()
+ 9 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->getIndex()
+10 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+11 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 11:18:40 --> Undefined property: stdClass::$business_other_detail_id
+in APPPATH/Views/business/tax_mapping.php on line 119.
+ 1 APPPATH/Views/business/tax_mapping.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$business_other_detail_id', 'APPPATH/Views/business/tax_mapping.php', 119, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/business/tax_mapping.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('business/tax_mapping', [], true)
+ 5 APPPATH/Views/template.php(65): view('business/tax_mapping')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH/Controllers/Business.php(95): view('template', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->getTaxMapping()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 11:31:05 --> Call to a member function save() on null
+in APPPATH/Controllers/Business.php on line 151.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->update_tax_mapping()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 11:32:23 --> Call to a member function save() on null
+in APPPATH/Controllers/Business.php on line 153.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Business->update_tax_mapping()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Business))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

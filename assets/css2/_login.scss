@@ -1,0 +1,113 @@
+.login-page{
+    background: var(--login-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.6);
+        z-index: 1;
+    }
+    .login-box{
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .logo-col{
+            background: var(--login-bg-container);
+            display: flex;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 35px 35px 85px 35px;
+            position: relative;
+            height: 85vh;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: rgba(0,0,0,0.6);
+                z-index: 1;
+            }
+            
+            .title-login{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                z-index: 2;
+                .barangay-logo{
+                    width: 120px;
+                    text-align: center;
+                }
+                h3{
+                    font-size: 27px;
+                    color: #fff;
+                    letter-spacing: 2px;
+                }
+            }
+            .brand-login{
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-content: center;
+                align-items: center;
+                h1{
+                    font-size: 14px;
+                    color: #fff;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                .bams-logo{
+                    width: 90%;
+                }
+            }
+            height: 85vh;
+        }
+        .login-col{
+            background-color: #fff;
+            padding: 30px;
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .logo-img{
+                
+                h1{
+                    display: flex;
+                    justify-content: flex-start;
+                    width: 100%;
+                    flex-direction: column;
+                    font-weight: bolder;
+                    
+                    hr{
+                        border-top: 8px solid var(--primary-color);
+                        opacity: 0.8;
+                        margin-top: 0;
+                        width: 50%;
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.modal{
+    .modal-content{
+        border-radius: 0;
+        border: 0;
+        .modal-header{
+            background-color: #333;
+            color: #fff;
+            border-radius: 0px;
+            .modal-title{
+                letter-spacing: 1px;
+            }
+        }
+        .modal-body{
+            label{
+                letter-spacing: 0.8px;
+                font-weight: 600;
+            }
+        }
+    }
+}

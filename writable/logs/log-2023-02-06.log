@@ -1,0 +1,31 @@
+CRITICAL - 2023-02-06 01:04:40 --> Undefined variable: files
+in APPPATH/Controllers/Residents.php on line 71.
+ 1 APPPATH/Controllers/Residents.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: files', 'APPPATH/Controllers/Residents.php', 71, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 01:04:51 --> Undefined variable: insertId
+in APPPATH/Controllers/Residents.php on line 75.
+ 1 APPPATH/Controllers/Residents.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: insertId', 'APPPATH/Controllers/Residents.php', 75, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 01:04:53 --> Undefined variable: insertId
+in APPPATH/Controllers/Residents.php on line 75.
+ 1 APPPATH/Controllers/Residents.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: insertId', 'APPPATH/Controllers/Residents.php', 75, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Residents->add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 01:12:51 --> syntax error, unexpected '$newName' (T_VARIABLE)
+in APPPATH/Controllers/Residents.php on line 72.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Residents.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Residents')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Residents')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Residents')
+ 5 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\Residents', true)
+ 6 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
